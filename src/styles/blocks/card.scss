@@ -1,0 +1,118 @@
+.card {
+  max-width: calc(200px - (#{$border} * 2) - (#{$card-padding} * 2));
+  max-height: 400px;
+  padding: #{$card-padding};
+  border: #{$border} solid #f3f3f3;
+  border-radius: 5px;
+
+  font-weight: 500;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-iMac {
+    margin: 16px 0 40px;
+    width: 160px;
+    height: 134px;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    line-height: 18px;
+    color: #{$main-accent};
+  }
+
+  &__code {
+    margin-bottom: 16px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #{$secondary-color};
+  }
+
+  &__rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 24px;
+  }
+
+  &__star {
+    display: flex;
+  }
+
+  &__stars-star {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+
+    background-image: url(images/star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__stars--1 :nth-child(1),
+  &__stars--2 :nth-child(-n+2),
+  &__stars--3 :nth-child(-n+3),
+  &__stars--4 :nth-child(-n+4),
+  &__stars--5 :nth-child(-n+5) {
+    background-image: url(images/star-active.svg);
+  }
+
+  &__review {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  &__price-list {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin-bottom: 16px;
+
+    list-style: none;
+  }
+
+  &__price-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #{$secondary-color};
+  }
+
+  &__price-amount {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__buy-button {
+    border: #{$border} solid #{$blue-accent};
+    border-radius: 5px;
+    background-color: #{$blue-accent};
+  }
+
+  &__buy-button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 38px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #{$white};
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__buy-button:hover {
+    background-color: #{$white};
+  }
+
+  &__buy-button-link:hover {
+    color: #{$blue-accent};
+  }
+}
