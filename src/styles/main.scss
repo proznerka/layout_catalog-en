@@ -1,3 +1,17 @@
-@import "./blocks/variables.scss";
-@import "./blocks/header.scss";
-@import "./blocks/card.scss";
+@import "utils/variables.scss";
+@import "utils/reset.scss";
+@import "utils/mixins.scss";
+@import "blocks/header.scss";
+@import "blocks/card.scss";
+@import "blocks/stars.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #{$main-accent};
+}

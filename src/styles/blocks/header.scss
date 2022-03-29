@@ -33,7 +33,7 @@
     margin-right: 20px;
     height: 60px;
 
-    color: #000;
+    color: #{$main-accent};
     text-decoration: none;
   }
 
@@ -50,7 +50,7 @@
   color: #00acdc;
 }
 
-.mis-active::after {
+.is-active::after {
   position: absolute;
   content: "";
   bottom: 0;
