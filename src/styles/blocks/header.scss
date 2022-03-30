@@ -6,7 +6,7 @@
 
   text-transform: uppercase;
 
-  // box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.05);
 
   &__link-logo {
     width: 40px;
@@ -42,12 +42,12 @@
   }
 
   &__link:hover {
-    color: #00acdc;
+    color: #{$blue-accent};
   }
 }
 
 .is-active {
-  color: #00acdc;
+  color: #{$blue-accent};
 }
 
 .is-active::after {
@@ -58,5 +58,5 @@
   width: 100%;
 
   border-radius: 8px;
-  background-color: #00acdc;
+  background-color: #{$blue-accent};
 }
