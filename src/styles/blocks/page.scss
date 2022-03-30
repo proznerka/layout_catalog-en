@@ -1,0 +1,13 @@
+.page {
+  &__header-wrapper {
+    box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  }
+
+  // &__header {
+  //   margin: 0 auto;
+  // }
+
+  &__catalog {
+    margin: 0 auto;
+  }
+}
